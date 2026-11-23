@@ -1,0 +1,10 @@
+node_modules
+.next
+.next-prod
+.taste-skill
+.claude
+.DS_Store
+*.log
+.env*
+next-env.d.ts
+*.tsbuildinfo
