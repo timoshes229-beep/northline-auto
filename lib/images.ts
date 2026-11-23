@@ -23,13 +23,17 @@ const u = (id: string) => `https://unsplash.com/photos/${id}`;
 /** Префикс пути: на GitHub Pages сайт живёт в подпапке /northline-auto */
 const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+/**
+ * Сквозная сцена «Путь автомобиля» (главный экран). Сгенерированы в Magnific (ИИ),
+ * один и тот же автомобиль во всех кадрах. Замените на собственный контент при желании.
+ */
+export const journeyImages = [1, 2, 3, 4, 5, 6].map((n) => `${base}/images/journey/scene-0${n}.jpg`);
+
 export const images = {
-  hero: { src: base + "/images/hero-911.jpg", alt: "Серебристый Porsche 911 в тёмной студии", width: 2400, height: 1600, position: "70% 50%", source: u("4HejFecAiuw") },
   cta: { src: base + "/images/cta-dark.jpg", alt: "Силуэт спортивного автомобиля в полной темноте", width: 2400, height: 1371, position: "60% 50%", source: u("0xySZZ8OK1o") },
   about: { src: base + "/images/about-amg.jpg", alt: "Чёрный Mercedes-AMG в полутёмном гараже", width: 1800, height: 1200, position: "50% 60%", source: "https://unsplash.com/s/photos/mercedes-amg-gt" },
   dirUsa: { src: base + "/images/dir-usa.jpg", alt: "Ночная трасса со световыми следами у Нью-Йорка", width: 2000, height: 1333, source: "https://unsplash.com/s/photos/new-york-city-night" },
   dirCanada: { src: base + "/images/dir-canada.jpg", alt: "Ночной Торонто, отражение в воде", width: 2000, height: 1335, source: "https://unsplash.com/s/photos/toronto-night" },
-  process: { src: base + "/images/process-port.jpg", alt: "Контейнеровоз в порту, вид сверху", width: 1800, height: 1350, source: "https://unsplash.com/s/photos/container-ship-port" },
 
   car911: { src: base + "/images/car-911.jpg", alt: "Тёмно-серый Porsche 911 с антикрылом", width: 1400, height: 700, source: "https://unsplash.com/s/photos/porsche-911" },
   carGle: { src: base + "/images/car-gle.jpg", alt: "Белый кроссовер Mercedes-Benz на тёмном фоне", width: 1400, height: 933, source: "https://unsplash.com/s/photos/mercedes-gle" },

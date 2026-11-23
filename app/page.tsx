@@ -6,10 +6,9 @@ import Directions from "@/components/Directions";
 import FinalCta from "@/components/FinalCta";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Journey from "@/components/Journey";
 import LeadProvider from "@/components/LeadProvider";
 import MotionLayer from "@/components/MotionLayer";
-import Process from "@/components/Process";
 import Reviews from "@/components/Reviews";
 import { site } from "@/lib/site";
 
@@ -27,12 +26,11 @@ export default function Home() {
     <LeadProvider>
       <Header />
       <main id="main">
-        <Hero />
+        <Journey />
         <About />
         <Directions />
         <Catalog />
         <Calculator />
-        <Process />
         <Gallery />
         <Advantages />
         <Reviews />

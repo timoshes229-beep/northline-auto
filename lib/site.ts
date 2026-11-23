@@ -22,6 +22,6 @@ export const nav = [
   { label: "Главная", href: "#top" },
   { label: "Автомобили", href: "#catalog" },
   { label: "О компании", href: "#about" },
-  { label: "Этапы работы", href: "#process" },
+  { label: "Этапы работы", href: "#scene-1" },
   { label: "Контакты", href: "#contacts" },
 ] as const;

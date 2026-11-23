@@ -17,7 +17,7 @@ export default function About() {
           <p className="eyebrow mb-6" data-reveal>
             О компании
           </p>
-          <h2 id="about-title" className="h-section" data-split>
+          <h2 id="about-title" className="h-section !text-[clamp(26px,3.2vw,46px)]" data-split>
             <SplitWords text="Ваш автомобиль. Наша ответственность." />
           </h2>
           <p className="mt-10 text-[clamp(19px,1.7vw,24px)] leading-[1.5] text-paper/90" data-reveal>

@@ -203,3 +203,30 @@ html.js-motion .word-inner {
 html.js-motion [data-hero-veil] {
   opacity: 1;
 }
+
+/* Сквозная сцена «путь автомобиля»: закреплённый режим только при разрешённой анимации */
+.journey-route {
+  display: none;
+}
+html.js-motion .journey {
+  height: 100svh;
+  min-height: 600px;
+  overflow: hidden;
+}
+html.js-motion .journey-scene {
+  position: absolute;
+  inset: 0;
+}
+html.js-motion .journey-scene:not(:first-child) {
+  clip-path: inset(0 0 0 100%);
+}
+html.js-motion .journey-route {
+  display: block;
+  opacity: 0;
+}
+html.js-motion [data-veil] {
+  opacity: 1;
+}
+html.js-motion .journey-scene:first-child [data-line] {
+  opacity: 0;
+}

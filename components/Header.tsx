@@ -79,9 +79,11 @@ export default function Header() {
               </ul>
             </nav>
             <div className="flex items-center gap-3">
-              <Button onClick={() => open()} className="hidden !min-h-[44px] !px-5 sm:inline-flex" icon={false}>
-                Оставить заявку
-              </Button>
+              <span className="hidden sm:block">
+                <Button onClick={() => open()} className="!min-h-[44px] !px-5" icon={false}>
+                  Оставить заявку
+                </Button>
+              </span>
               <button
                 className="relative grid h-11 w-11 place-items-center rounded-full border border-line lg:hidden"
                 aria-label={menu ? "Закрыть меню" : "Открыть меню"}

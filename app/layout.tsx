@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Подбор, проверка, покупка и доставка автомобилей из США и Канады в Украину.",
     type: "website",
     locale: "ru_UA",
-    images: [{ url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/hero-911.jpg`, width: 2400, height: 1600 }],
+    images: [{ url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/journey/scene-01.jpg`, width: 2200, height: 1235 }],
   },
   icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg` },
 };
