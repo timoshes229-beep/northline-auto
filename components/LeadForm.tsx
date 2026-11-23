@@ -41,6 +41,12 @@ export default function LeadForm({ defaultTopic = "", autoFocus, onDone }: Props
       return;
     }
     setState("sending");
+    // Статическая версия (GitHub Pages): сервера нет, заявка только проверяется в браузере
+    if (process.env.NEXT_PUBLIC_STATIC === "1") {
+      await new Promise((r) => setTimeout(r, 700));
+      setState("sent");
+      return;
+    }
     try {
       const res = await fetch("/api/lead", {
         method: "POST",
@@ -72,8 +78,8 @@ export default function LeadForm({ defaultTopic = "", autoFocus, onDone }: Props
         <div>
           <p className="h-display text-lg">Заявка принята</p>
           <p className="lead mt-2 text-[15px]">
-            Спасибо, {data.name.split(" ")[0]}. Это демо-версия сайта: заявка проверена сервером, но пока никуда не
-            отправляется. Подключите CRM или Telegram-бота в <code className="text-gold-2">app/api/lead/route.ts</code>.
+            Спасибо, {data.name.split(" ")[0]}. Это демо-версия сайта: заявка проверена, но пока никуда не
+            отправляется — приём заявок подключается отдельно (CRM или Telegram-бот).
           </p>
         </div>
         {onDone && (

@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     description: "Подбор, проверка, покупка и доставка автомобилей из США и Канады в Украину.",
     type: "website",
     locale: "ru_UA",
-    images: [{ url: "/images/hero-911.jpg", width: 2400, height: 1600 }],
+    images: [{ url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/hero-911.jpg`, width: 2400, height: 1600 }],
   },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg` },
 };
 
 export const viewport: Viewport = {
