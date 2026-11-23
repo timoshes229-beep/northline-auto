@@ -32,15 +32,15 @@ export const journeyImages = [1, 2, 3, 4, 5, 6].map((n) => `${base}/images/journ
 export const images = {
   cta: { src: base + "/images/cta-dark.jpg", alt: "Силуэт спортивного автомобиля в полной темноте", width: 2400, height: 1371, position: "60% 50%", source: u("0xySZZ8OK1o") },
   about: { src: base + "/images/about-amg.jpg", alt: "Чёрный Mercedes-AMG в полутёмном гараже", width: 1800, height: 1200, position: "50% 60%", source: "https://unsplash.com/s/photos/mercedes-amg-gt" },
-  dirUsa: { src: base + "/images/dir-usa.jpg", alt: "Ночная трасса со световыми следами у Нью-Йорка", width: 2000, height: 1333, source: "https://unsplash.com/s/photos/new-york-city-night" },
-  dirCanada: { src: base + "/images/dir-canada.jpg", alt: "Ночной Торонто, отражение в воде", width: 2000, height: 1335, source: "https://unsplash.com/s/photos/toronto-night" },
+  dirUsa: { src: base + "/images/dir-usa.jpg", alt: "Графитовый кроссовер на пустынной трассе на юго-западе США в сумерках", width: 1200, height: 1600, source: "Magnific (ИИ)" },
+  dirCanada: { src: base + "/images/dir-canada.jpg", alt: "Тот же автомобиль на заснеженной горной дороге в Канаде", width: 1200, height: 1600, source: "Magnific (ИИ)" },
 
-  car911: { src: base + "/images/car-911.jpg", alt: "Тёмно-серый Porsche 911 с антикрылом", width: 1400, height: 700, source: "https://unsplash.com/s/photos/porsche-911" },
-  carGle: { src: base + "/images/car-gle.jpg", alt: "Белый кроссовер Mercedes-Benz на тёмном фоне", width: 1400, height: 933, source: "https://unsplash.com/s/photos/mercedes-gle" },
-  carX5: { src: base + "/images/car-x5.jpg", alt: "Чёрный BMW X5 с включёнными фарами в сумерках", width: 1400, height: 934, source: "https://unsplash.com/s/photos/bmw-x5" },
-  carRs7: { src: base + "/images/car-rs7.jpg", alt: "Серый Audi RS7 на причале", width: 1400, height: 930, source: "https://unsplash.com/s/photos/audi-rs7" },
-  carModelY: { src: base + "/images/car-modely.jpg", alt: "Чёрная Tesla в гараже", width: 1400, height: 855, source: "https://unsplash.com/s/photos/tesla-model-y" },
-  carMustang: { src: base + "/images/car-mustang.jpg", alt: "Чёрный Ford Mustang Shelby на закате", width: 1400, height: 935, source: "https://unsplash.com/s/photos/ford-mustang" },
+  car911: { src: base + "/images/catalog/911.jpg", alt: "Тёмно-серый Porsche 911 Carrera 4S в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
+  carGle: { src: base + "/images/catalog/gle.jpg", alt: "Чёрный Mercedes-AMG GLE 63 S в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
+  carX5: { src: base + "/images/catalog/x5.jpg", alt: "Белый BMW X5 M50d в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
+  carRs7: { src: base + "/images/catalog/rs7.jpg", alt: "Синий Audi RS7 Sportback в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
+  carModelY: { src: base + "/images/catalog/modely.jpg", alt: "Белая Tesla Model Y в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
+  carMustang: { src: base + "/images/catalog/mustang.jpg", alt: "Красный Ford Mustang Convertible в чёрной студии", width: 1600, height: 898, source: "Magnific (ИИ)" },
 
   galAmg: { src: base + "/images/gal-amg.jpg", alt: "Матовый чёрный Mercedes-AMG GT у гавани", width: 1800, height: 1013, source: "https://unsplash.com/s/photos/mercedes-amg-gt" },
   galRed: { src: base + "/images/gal-red.jpg", alt: "Красный спорткар с включёнными фарами в темноте", width: 1400, height: 933, source: "https://unsplash.com/s/photos/porsche-dark" },

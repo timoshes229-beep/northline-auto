@@ -97,17 +97,18 @@ function CarCard({ car }: { car: Car }) {
       exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.25 } }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4 }}
-      className="group flex flex-col overflow-hidden rounded-[24px] border border-line bg-ink-2"
+      className="group flex flex-col overflow-hidden rounded-[24px] border border-line bg-[#060607] transition-colors duration-500 hover:border-gold/40"
     >
-      <div className="relative aspect-[16/10] overflow-hidden">
+      <div className="relative aspect-[16/9] overflow-hidden">
         <Image
           src={car.image.src}
           alt={car.image.alt}
           fill
           sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-          className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.06]"
+          className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.05]"
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink-2/80 via-transparent to-transparent" />
+        <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#060607] to-transparent" />
+        <div aria-hidden className="absolute inset-x-[15%] bottom-0 h-px bg-gradient-to-r from-transparent via-gold/70 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
         <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-ink/70 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] backdrop-blur-md">
           <span className={`h-1.5 w-1.5 rounded-full ${statusColor[car.status]}`} aria-hidden />
           {car.status}
